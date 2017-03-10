@@ -5,12 +5,11 @@
 
 **1.01 (*) Encuentra el último elemento de una lista.**
 
-    > Ejemplo:
+     >Ejemplo:
      ?- mi_ultima(X,[a,b,c,d]).
      X = d
-    
-
-----------
+     
+    ----------
 
 
 **1.02 (*) Encuentra el ultimo, pero un elemento de una lista.**
