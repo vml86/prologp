@@ -4,6 +4,7 @@
 **Una lista es, ya sea vacia o compuesta por un primer elemento cabeza y una cola, la cual es solo una lista por si misma**. En prolog representamos la lista vacia por un atomo [] y una lista no vacia por un termino [H|T], donde H denota head cabeza y T denota tail cola
 
 **1.01 (*) Encuentra el último elemento de una lista.**
+
     Ejemplo:
 	?- mi_ultima(X,[a,b,c,d]).
     X = d
