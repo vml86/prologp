@@ -12,7 +12,7 @@
 
 **Listas de Prolog**
 
-  Las soluciones las puedes encontrar aqui ![]()
+  Las soluciones las puedes encontrar aqui ![](https://github.com/vml86/prologp/blob/master/Soluciones.md)
 ----------------
 
 Una lista es, ya sea vacia o compuesta por un primer elemento cabeza y una cola, la cual es solo una lista por si misma. En prolog representamos la lista vacia por un atomo [] y una lista no vacia por un termino [H|T], donde H denota head cabeza y T denota tail cola
