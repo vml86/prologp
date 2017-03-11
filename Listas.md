@@ -130,7 +130,7 @@ Modifique el resultado del problema 1.10 de tal manera que si un elemento no tie
     X = [[4,a],b,[2,c],[2,a],d,[4,e]]
 
 
-----------
+
 
 
 **1.12 ( * *)Decodificar una lista codificada de longitud de ejecución.**
@@ -138,7 +138,7 @@ Modifique el resultado del problema 1.10 de tal manera que si un elemento no tie
 Dada una lista de códigos de longitud de ejecución generada como se especifica en el problema 1.11. Construya su versión sin comprimir.
 
 
-----------
+
 
 
 **1.13 ( * *)Codificación de longitud de ejecución de una lista (solución directa).**
@@ -151,7 +151,7 @@ Implementar directamente el método de compresión de datos de codificación de 
     X = [[4,a],b,[2,c],[2,a],d,[4,e]]
 
 
-----------
+
 
 
 **1.14 (*) Duplicar los elementos de una lista.**
@@ -162,7 +162,7 @@ Implementar directamente el método de compresión de datos de codificación de 
     X = [a, a, b, b, c, c, c, c, d, d]
 
 
-----------
+
 
 
 **1.15 ( * *) Duplicar los elementos de una lista un número dado de veces.**
@@ -175,7 +175,7 @@ Implementar directamente el método de compresión de datos de codificación de 
     \ Alpha - dupli (X, 3, Y).
 
 
-----------
+
 
 
 **1.16 ( * *)Soltar cada elemento N'th de una lista.**
@@ -186,7 +186,7 @@ Implementar directamente el método de compresión de datos de codificación de 
     X = [a,b,d,e,g,h,k]
 
 
-----------
+
 
 
 **1.17 (*) Dividir una lista en dos partes; Se da la longitud de la primera parte.**
@@ -199,7 +199,7 @@ No utilice predicados predefinidos.
     L2 = [d, e, f, g, h, i, k]
 
 
-----------
+
 
 
 **1.18 ( * *) Extrae una tira de una lista.**
@@ -211,7 +211,7 @@ Dado dos índices, I y K, la tira es la lista que contiene los elementos entre e
     L = [c, d, e, f, g]
 
 
-----------
+
 
 
 **1.19 ( * *) Rotar una lista N hacia la izquierda.**
@@ -226,7 +226,7 @@ Dado dos índices, I y K, la tira es la lista que contiene los elementos entre e
 Pista: Utilice los predicados predefinidos length / 2 y append / 3, así como el resultado del problema 1.17.
 
 
-----------
+
 
 
 **1.20 (*) Quite el elemento K'th de una lista.**
@@ -238,7 +238,7 @@ Pista: Utilice los predicados predefinidos length / 2 y append / 3, así como el
     R = [a, c, d]).
 
 
-----------
+
 
 
 **1.21 (*) Insertar un elemento en una posición determinada en una lista.**
@@ -249,7 +249,7 @@ Pista: Utilice los predicados predefinidos length / 2 y append / 3, así como el
     L = [a, alfa, b, c, d]
 
 
-----------
+
 
 
 **1.22 (*) Crea una lista que contenga todos los enteros dentro de un rango dado.**
@@ -260,7 +260,7 @@ Pista: Utilice los predicados predefinidos length / 2 y append / 3, así como el
     L = [4,5,6,7,8,9]
 
 
-----------
+
 
 
 **1.23 ( * *) Extrae un número dado de elementos seleccionados aleatoriamente de una lista.**
@@ -274,7 +274,7 @@ Los elementos seleccionados se incluirán en una lista de resultados.
 Pista: Utilice el generador de números aleatorios al azar / 2 y el resultado del problema 1.20.
 
 
-----------
+
 
 
 **1.24 (*) Lotería: Dibuja N números aleatorios diferentes del conjunto 1.M.**
@@ -288,7 +288,7 @@ Los números seleccionados se incluirán en una lista de resultados.
 Pista: Combinar las soluciones de los problemas 1.22 y 1.23.
 
 
-----------
+
 
 
 **1.25 (*) Genera una permutación aleatoria de los elementos de una lista.**
@@ -301,7 +301,7 @@ Pista: Combinar las soluciones de los problemas 1.22 y 1.23.
 Pista: Utilice la solución del problema 1.23.
 
 
-----------
+
 
 
 **1.26 ( * *) Generar las combinaciones de K objetos distintos elegidos de los N elementos de una lista.**
@@ -339,7 +339,7 @@ Tome en cuenta que no queremos permutaciones de los miembros del grupo; Es decir
 Puede encontrar más información sobre este problema combinatorio en un buen libro sobre matemáticas discretas bajo el término "coeficientes multinomiales".
 
 
-----------
+
 
 
 **1.28 ( * *) Clasificar una lista de listas según la longitud de las sublistas.**
