@@ -32,7 +32,6 @@ Una lista es, ya sea vacia o compuesta por un primer elemento cabeza y una cola,
              (*de: zweitletztes Element, fr: avant-dernier élément*)
 
 
-----------
 
 
              
@@ -45,26 +44,26 @@ Una lista es, ya sea vacia o compuesta por un primer elemento cabeza y una cola,
      X = c
 
 
-----------
+
 
 
 **1.04 (*) Encuentra el numero de elementos de una lista.**
 
 
-----------
+
 
 
 **1.05 (*) Retroceder una lista.**
 
 
-----------
+
 
 
 **1.06 (*) Averigüe si una lista es un palíndromo.**
 Un palíndromo puede ser leído al derecho o al revés; e.g. [x,a,m,a,x].
 
 
-----------
+
 
 
 **1.07 (**) Aplanando una estructura de una lista anidad.**
@@ -80,7 +79,6 @@ Transforme una lista, posiblemente manteniendo las listas como elementos en una 
 Pista: Usar el predicado predefinido is_list/1 and append/3
 
 
-----------
 
 
 **1.08 (**)Eliminar duplicados consecutivos de los elementos de una list.**
@@ -97,7 +95,7 @@ Si una lista contiene elementos repetidos, deberían ser reemplazados con una co
 **1.09 (**)Si una lista contiene elementos repetidos, deberían ser colocados en sublistas separadas.**
 
 
-----------
+
 
 
 > **Ejemplo:**
@@ -106,7 +104,7 @@ Si una lista contiene elementos repetidos, deberían ser reemplazados con una co
     X = [[a,a,a,a],[b],[c,c],[a,a],[d],[e,e,e,e]]
 
 
-----------
+
 
 
 **1.10 (*)Codificación de longitud de ejecución de una lista.**
@@ -119,7 +117,7 @@ Utilice el resultado del problema 1.09 para implementar el denominado método de
     X = [[4,a],[1,b],[2,c],[2,a],[1,d],[4,e]]
 
 
-----------
+
 
 
 **1.11 (*)Codificación de longitud de ejecución modificada.**
