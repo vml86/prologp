@@ -97,6 +97,7 @@ La función llamada totient phi (m) de Euler se define como el número de entero
 Averigüe cuál es el valor de phi (m) si m es un número primo. La función totient de Euler juega un papel importante en uno de los métodos de criptografía de clave pública más utilizados (RSA). En este ejercicio debe utilizar el método más primitivo para calcular esta función. Hay una manera más inteligente que usaremos en 2.10.
 
 > **2.10 (* *) Calcule la función totent de Euler phi (m) (2).**
+
 Véase el problema 2.09 para la definición de la función totient de Euler. Si la lista de los factores primos de un número m es conocida en la forma del problema 2.03 entonces la función phi (m) puede calcularse eficientemente de la siguiente manera: [p1, m1], [p2, m2], [p3, M3], ...] la lista de factores primos (y sus multiplicidades) de un número dado m. Entonces phi (m) se puede calcular con la siguiente fórmula:
 
     (M3 - 1) * p2 * * (m2 - 1) * (p3 - 1) * p3 * * (m3 - 1) * p1 ** (m1 - 1) * p2 ...
