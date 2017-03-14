@@ -28,6 +28,7 @@ Ahora, escriba una tabla de predicados / 3 que imprima la tabla de verdad de una
 **3.02 (*) Tablas de verdades para expresiones lógicas (2).**
 
 Continúe el problema 3.01 definiendo y / 2, o / 2, etc como operadores. Esto permite escribir la expresión lógica de la manera más natural, como en el ejemplo: A y (A o no B). Defina la precedencia del operador como de costumbre; Como en Java.
+
 **Ejemplo:**
 
     ?- table(A,B, A and (A or not B)).
@@ -47,15 +48,14 @@ Generalizar problema 3.02 de tal manera que la expresión lógica puede contener
 
     ?- table([A,B,C], A and (B or C) equ A and B or A and C).
 
-| true | true | true |true |
-|:-------------------|:--------:|-------------------:|
-| true            | true   | fail | true             |
-| true            | fail   | true | true             |
-| true            | fail   | fail | true             |
-| fail            | true   | true | true             |
-| fail            | true   | fail | true             |
-| fail            | fail   | true | true             |
-| dail            | fail   | fail | true             |
+true | true | true |true
+--- | --- | --- | ---
+true | true | fail |true
+true | fail | true |true
+true | fail | fail |true
+fail | true | true |true
+fail | fail | true |true
+fail | fail | fail |true
 
 
 
