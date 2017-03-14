@@ -50,13 +50,13 @@ Generalizar problema 3.02 de tal manera que la expresión lógica puede contener
 
 true | true | true |true
 --- | --- | --- | ---
- |  |  |
+    |     |     |
 true | true | fail |true
-Día | Ingresos | Egresos |true
-Día | Ingresos | Egresos |true
-Día | Ingresos | Egresos |true
-Día | Ingresos | Egresos |true
-Día | Ingresos | Egresos |true
+true | fail | true |true
+true | fail | fail |true
+fail | true | true |true
+fail | fail | true |true
+fail | fail | fail |true
 
 
 
