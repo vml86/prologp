@@ -48,16 +48,12 @@ Generalizar problema 3.02 de tal manera que la expresión lógica puede contener
 
     ?- table([A,B,C], A and (B or C) equ A and B or A and C).
 
-| true | true | true |true |
-|:-------------------|:--------:|-------------------:|
-| true            | true   | fail | true             |
-| true            | fail   | true | true             |
-| true            | fail   | fail | true             |
-| fail            | true   | true | true             |
-| fail            | true   | fail | true             |
-| fail            | fail   | true | true             |
-| dail            | fail   | fail | true             |
-
+Día | Ingresos | Egresos |true
+--- | --- | --- | ---
+Día | Ingresos | Egresos |true
+Día | Ingresos | Egresos |true
+Día | Ingresos | Egresos |true
+Día | Ingresos | Egresos |true
 
 
 
