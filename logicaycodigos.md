@@ -50,7 +50,6 @@ Generalizar problema 3.02 de tal manera que la expresión lógica puede contener
 
 true | true | true |true
 --- | --- | --- | ---
-    |     |     |
 true | true | fail |true
 true | fail | true |true
 true | fail | fail |true
