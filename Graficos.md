@@ -107,7 +107,7 @@ Dos gráficas G1 (N1, E1) y G2 (N2, E2) son isomorfas si existe una bijección f
 
 Escribe un predicado que determina si dos gráficas son isomorfas. Sugerencia: Utilice una lista abierta para representar la función f.
 
-**6.07(* *) Grado del nodo y coloración del gráfico**
+**6.07(* *) Grado del nodo y coloración del gráfico*
 
 **a)** Escribe un grado de predicado (Gráfico, Nodo, Deg) que determina el grado de un nodo dado.
 
