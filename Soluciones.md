@@ -71,7 +71,7 @@ Un palíndromo puede ser leído al derecho o al revés; e.g. [x,a,m,a,x].
 % is_palindrome(L) :- L is a palindrome list
 %    (list) (?)is_palindrome(L) :- reverse(L,L).
 
-**% 1.07 (**)Aplanando una estructura de una lista anidada.**
+**% 1.07 (* *)Aplanando una estructura de una lista anidada.**
 
 % my_flatten(L1,L2) :- the list L2 is obtained from the list L1 by
 %    flattening; i.e. if an element of L1 is a list then it is replaced
@@ -85,7 +85,7 @@ Un palíndromo puede ser leído al derecho o al revés; e.g. [x,a,m,a,x].
     my_flatten([X|Xs],Zs) :- my_flatten(X,Y), my_flatten(Xs,Ys), append(Y,Ys,Zs).
 
 
-**%1.08(**)Eliminar duplicados consecutivos de los elementos de una list.**
+**%1.08(* *)Eliminar duplicados consecutivos de los elementos de una list.**
 
 Si una lista contiene elementos repetidos, deberían ser reemplazados con una copia sencilla del elemnto. El orden de los elementos de no deben de ser cambiados.
 
