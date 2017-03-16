@@ -84,28 +84,28 @@ Escribir predicados para convertir entre las diferentes representaciones gráfic
 
 Escriba una ruta de predicado (G, A, B, P) para encontrar una trayectoria acíclica P del nodo A al nodo B en el gráfico G. El predicado debe devolver todos los recorridos a través de retroceso.
 
-**6.03 (*) Ciclo de un nodo dado**
+**6.03(*) Ciclo de un nodo dado**
 
 Escribir un ciclo de predicado (G, A, P) para encontrar un camino cerrado (ciclo) P comenzando en un nodo dado A en el gráfico G. El predicado debe devolver todos los ciclos mediante retroceso.
 
-**6.04 (* *) Construir todos los árboles de expansión**
+**6.04(* *) Construir todos los árboles de expansión**
 
 Escriba un predicado s_tree (Gráfico, Árbol) para construir (por retroceso) todos los árboles que se extienden de un gráfico dado. Con este predicado, averiguar cuántos árboles que se extienden hay para el gráfico representado a la izquierda. Los datos de este ejemplo de gráfico se pueden encontrar en el archivo p6_04.dat. Cuando tenga una solución correcta para el predicado s_tree / 2, utilícelo para definir otros dos predicados útiles: is_tree (Graph) y is_connected (Graph). Ambas son tareas de cinco minutos!
 
 ![enter image description here](https://lh3.googleusercontent.com/-pZGBLlc_un0/WMn3PT7H_bI/AAAAAAAAAD4/aK59ItfTcIcT1jEFmlr_nFShbR8YrCo5QCLcB/s0/p83.gif "p83.gif")
 
-**6.05 (* *) Construir el árbol de expansión mínimo**
+**6.05(* *) Construir el árbol de expansión mínimo**
 
 Escriba un predicado ms_tree (Graph, Tree, Sum) para construir el árbol de expansión mínimo de un gráfico etiquetado dado. Sugerencia: Utilice el algoritmo de Prim. Una pequeña modificación de la solución de 6.04 hace el truco. Los datos del gráfico de ejemplo a la derecha se pueden encontrar en el archivo p6_05.dat.
 
 ![enter image description here](https://lh3.googleusercontent.com/-V2B2LAshaM4/WMn3aMuTncI/AAAAAAAAAEA/risQX68EhloNxsK4Kdvz2Jgqqs8k-1MaACLcB/s0/p84.gif "p84.gif")
 
-**6.06 (* *) Gráfico isomorfismo**
+**6.06(* *) Gráfico isomorfismo**
 Dos gráficas G1 (N1, E1) y G2 (N2, E2) son isomorfas si existe una bijección f: N1 -> N2 tal que para cualquier nodo X, Y de N1, X e Y son adyacentes si y solo si f X) yf (Y) son adyacentes.
 
 Escribe un predicado que determina si dos gráficas son isomorfas. Sugerencia: Utilice una lista abierta para representar la función f.
 
-**6.07 (* *) Grado del nodo y coloración del gráfico**
+**6.07(* *) Grado del nodo y coloración del gráfico**
 
 **a)** Escribe un grado de predicado (Gráfico, Nodo, Deg) que determina el grado de un nodo dado.
 **b)** Escriba un predicado que genere una lista de todos los nodos de un gráfico ordenados según el grado decreciente.
