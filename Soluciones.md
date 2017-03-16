@@ -66,7 +66,7 @@ El primer elemento en la lista es el número 1.
 **%1.06 (*)Averigüe si una lista es un palíndromo.**
 Un palíndromo puede ser leído al derecho o al revés; e.g. [x,a,m,a,x].
 
-% 1.06 (*): Find out whether a list is a palindrome
+
 % A palindrome can be read forward or backward; e.g. [x,a,m,a,x]
 % is_palindrome(L) :- L is a palindrome list
 %    (list) (?)is_palindrome(L) :- reverse(L,L).
@@ -99,4 +99,50 @@ Si una lista contiene elementos repetidos, deberían ser reemplazados con una co
     compress([X,X|Xs],Zs) :- compress([X|Xs],Zs).
     compress([X,Y|Ys],[X|Zs]) :- X \= Y, compress([Y|Ys],Zs).
 
+**1.09 (* *) Empaquetar los duplicados consecutivos de los elementos de una lista dentro de las sublistas.**
+
+
+% paquete(L1,L2) :- la lista L2 es obtenida de la lista L1, empaquetada
+%    inicidencias repetidas de los elementos dentro de listas separadas.
+%    (list,list) (+,?)
+
+    pack([],[]).
+    pack([X|Xs],[Z|Zs]) :- transfer(X,Xs,Ys,Z), pack(Ys,Zs).
+
+% transferir(X,Xs,Ys,Z) Ys es la lista que permanece de la lista Xs
+%    cuando todas las copias importantes de X son removidas y transferidas a Z.
+
+    transfer(X,[],[],[X]).
+    transfer(X,[Y|Ys],[Y|Ys],[X]) :- X \= Y.
+    transfer(X,[X|Xs],Ys,[X|Zs]) :- transfer(X,Xs,Ys,Zs).
+
+**% 1.10 (*)Codificación de longitud de ejecución de una lista.**
+
+Utilice el resultado del problema 1.09 para implementar el denominado método de compresión de datos de codificación de longitud de ejecución. Los duplicados consecutivos de elementos se codifican como términos [N, E] donde N es el número de duplicados del elemento E.
+
+% codificar(L1,L2) :- la lista L2 es obtenida de la lista L, codificando la longitud de ejecución
+%    codificando. Duplicados consecutivos de los elementos que son decodificados como un terminos [N,E],
+%    Donde N es el numero de duplicados de los elementos E.
+%    (lista,lista) (+,?)
+
+    :- ensure_loaded(p1_09).    
+    encode(L1,L2) :- pack(L1,L), transform(L,L2).
+    
+    transform([],[]).
+    transform([[X|Xs]|Ys],[[N,X]|Zs]) :- length([X|Xs],N),    transform(Ys,Zs).
+
+**% 1.11 (*) Codificación de longitud de ejecución modificada**
+
+% decodificacion_modificada (L1, L2): - la lista L2 se obtiene de la lista L1 por
+% decodificación de longitud de ejecución. Los duplicados consecutivos de elementos están codificados
+% como términos [N, E], donde N es el número de duplicados del elemento E.
+% sin embargo, si N es igual a 1 entonces el elemento simplemente se copia en el
+% lista de resultados.
+% (Lista, lista) (+,?)    : - ensure_loaded (p1_10).
+    
+    Encode_modified (L1, L2): - encode (L1, L), Strip (L, L2).
+    
+    Strip([],[]).
+    Strip ([[1, X] | Ys], [X | Zs]): - tira (Ys, Zs).
+    [N, X] | Ys], [[N, X] | Zs]): - N> 1, tira (Ys, Zs).
 
