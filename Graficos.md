@@ -78,7 +78,7 @@ La notación de los gráficos etiquetados también se puede utilizar para los ll
 
 **6.01 (* * *) Conversiones**
 
-Escribir predicados para convertir entre las diferentes representaciones gráficas. Con estos predicados, todas las representaciones son equivalentes; Es decir, para los siguientes problemas siempre se puede elegir libremente la forma más conveniente. La razón por la que este problema está clasificado (***) no es porque es particularmente difícil, sino porque es un montón de trabajo para tratar con todos los casos especiales.
+Escribir predicados para convertir entre las diferentes representaciones gráficas. Con estos predicados, todas las representaciones son equivalentes; Es decir, para los siguientes problemas siempre se puede elegir libremente la forma más conveniente. La razón por la que este problema está clasificado (***)no es porque es particularmente difícil, sino porque es un montón de trabajo para tratar con todos los casos especiales.
 
 **6.02 (* *) Ruta de un nodo a otro**
 
@@ -102,6 +102,7 @@ Escriba un predicado ms_tree (Graph, Tree, Sum) para construir el árbol de expa
 ![enter image description here](https://lh3.googleusercontent.com/-V2B2LAshaM4/WMn3aMuTncI/AAAAAAAAAEA/risQX68EhloNxsK4Kdvz2Jgqqs8k-1MaACLcB/s0/p84.gif "p84.gif")
 
 **6.06(* *) Gráfico isomorfismo**
+
 Dos gráficas G1 (N1, E1) y G2 (N2, E2) son isomorfas si existe una bijección f: N1 -> N2 tal que para cualquier nodo X, Y de N1, X e Y son adyacentes si y solo si f X) yf (Y) son adyacentes.
 
 Escribe un predicado que determina si dos gráficas son isomorfas. Sugerencia: Utilice una lista abierta para representar la función f.
@@ -127,6 +128,7 @@ Escribe un predicado que averigüe si un gráfico dado es bipartito.
 En un gráfico K-regular todos los nodos tienen un grado de K; Es decir, el número de aristas incidentes en cada nodo es K. ¿Cuántos gráficos (no isomórficos) 3-regulares con 6 nodos hay?
 
 Véase también la tabla de resultados en p6_11.txt.
+
 
 ----------
 
