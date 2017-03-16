@@ -84,17 +84,17 @@ Escribir predicados para convertir entre las diferentes representaciones gráfic
 
 Escriba una ruta de predicado (G, A, B, P) para encontrar una trayectoria acíclica P del nodo A al nodo B en el gráfico G. El predicado debe devolver todos los recorridos a través de retroceso.
 
-**6.03(*) Ciclo de un nodo dado**
+**6.03 (*) Ciclo de un nodo dado**
 
 Escribir un ciclo de predicado (G, A, P) para encontrar un camino cerrado (ciclo) P comenzando en un nodo dado A en el gráfico G. El predicado debe devolver todos los ciclos mediante retroceso.
 
-**6.04(* *) Construir todos los árboles de expansión**
+**6.04 (* *) Construir todos los árboles de expansión**
 
 Escriba un predicado s_tree (Gráfico, Árbol) para construir (por retroceso) todos los árboles que se extienden de un gráfico dado. Con este predicado, averiguar cuántos árboles que se extienden hay para el gráfico representado a la izquierda. Los datos de este ejemplo de gráfico se pueden encontrar en el archivo p6_04.dat. Cuando tenga una solución correcta para el predicado s_tree / 2, utilícelo para definir otros dos predicados útiles: is_tree (Graph) y is_connected (Graph). Ambas son tareas de cinco minutos!
 
 ![enter image description here](https://lh3.googleusercontent.com/-pZGBLlc_un0/WMn3PT7H_bI/AAAAAAAAAD4/aK59ItfTcIcT1jEFmlr_nFShbR8YrCo5QCLcB/s0/p83.gif "p83.gif")
 
-**6.05(* *) Construir el árbol de expansión mínimo**
+**6.05 (* *) Construir el árbol de expansión mínimo**
 
 Escriba un predicado ms_tree (Graph, Tree, Sum) para construir el árbol de expansión mínimo de un gráfico etiquetado dado. Sugerencia: Utilice el algoritmo de Prim. Una pequeña modificación de la solución de 6.04 hace el truco. Los datos del gráfico de ejemplo a la derecha se pueden encontrar en el archivo p6_05.dat.
 
