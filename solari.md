@@ -278,7 +278,7 @@ soltar (L1, N, L2): - gota (L1, N, L2, N).
 
     insert_at(X,L,K,R) :- remove_at(X,R,K,L).
 
-**% 1.22 (*)Crea una lista que contiene todos los enteros dentro de un rango dado.**
+**% 1.22(*)Crea una lista que contiene todos los enteros dentro de un rango dado**
 
 % Rango (I, K, L): - I <= K, y L es la lista que contiene todos
 % De enteros consecutivos de I a K.
@@ -286,6 +286,7 @@ soltar (L1, N, L2): - gota (L1, N, L2, N).
 
 
 **% 1.23 (* *) Extrae un número dado de elementos seleccionados al azar**
+
 % De una lista.
 
 % Rnd_select (L, N, R): - la lista R contiene N seleccionados al azar
@@ -367,6 +368,7 @@ soltar (L1, N, L2): - gota (L1, N, L2, N).
     group(R,Ns,Gs).
 
 **% 1.28 (* *) Clasificación de una lista de listas según la longitud**
+
 % A) tipo de longitud
 % Lsort (InList, OutList): - se supone que los elementos de InList
 % son listas. Entonces OutList se obtiene de InList mediante la clasificación
