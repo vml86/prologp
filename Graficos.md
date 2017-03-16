@@ -110,7 +110,9 @@ Escribe un predicado que determina si dos gráficas son isomorfas. Sugerencia: U
 **6.07(* *) Grado del nodo y coloración del gráfico**
 
 **a)** Escribe un grado de predicado (Gráfico, Nodo, Deg) que determina el grado de un nodo dado.
+
 **b)** Escriba un predicado que genere una lista de todos los nodos de un gráfico ordenados según el grado decreciente.
+
 **c)** Utilice el algoritmo de Welch-Powell para pintar los nodos de un gráfico de tal manera que los nodos adyacentes tengan colores diferentes.
 
 **6.08 (* *) Profundidad-primer orden de recorrido transversal**
