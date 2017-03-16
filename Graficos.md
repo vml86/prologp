@@ -74,7 +74,7 @@ Observe cómo la información de borde se ha empaquetado en un término con func
 
     [p>q/9, m>q/7, k, p>m/5]
 
-La notación de los gráficos etiquetados también se puede utilizar para los llamados **multi-gráficos**, donde se permite más de un borde (o arco) entre dos nodos dados.
+La notación de los gráficos etiquetados también se puede utilizar para los llamados **multi-gráficos** , donde se permite más de un borde (o arco) entre dos nodos dados.
 
 **6.01 (* * *) Conversiones**
 
