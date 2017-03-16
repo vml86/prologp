@@ -77,7 +77,6 @@ Observe cómo la información de borde se ha empaquetado en un término con func
 La notación de los gráficos etiquetados también se puede utilizar para los llamados **multi-gráficos**, donde se permite más de un borde (o arco) entre dos nodos dados.
 
 **6.01 (* * *) Conversiones**
-**6.01 (* * *) Conversiones**
 
 Escribir predicados para convertir entre las diferentes representaciones gráficas. Con estos predicados, todas las representaciones son equivalentes; Es decir, para los siguientes problemas siempre se puede elegir libremente la forma más conveniente. La razón por la que este problema está clasificado (***) no es porque es particularmente difícil, sino porque es un montón de trabajo para tratar con todos los casos especiales.
 
@@ -124,6 +123,7 @@ Escribe un predicado que divide un gráfico en sus componentes conectados.
 Escribe un predicado que averigüe si un gráfico dado es bipartito.
 
 **6.11 (* * *) Generar gráficos simples K-regulares con N nodos**
+
 En un gráfico K-regular todos los nodos tienen un grado de K; Es decir, el número de aristas incidentes en cada nodo es K. ¿Cuántos gráficos (no isomórficos) 3-regulares con 6 nodos hay?
 
 Véase también la tabla de resultados en p6_11.txt.
