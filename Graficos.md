@@ -84,7 +84,8 @@ Escribir predicados para convertir entre las diferentes representaciones gráfic
 
 Escriba una ruta de predicado (G, A, B, P) para encontrar una trayectoria acíclica P del nodo A al nodo B en el gráfico G. El predicado debe devolver todos los recorridos a través de retroceso.
 
-**6.03 (*) Ciclo de un nodo dado**
+
+**6.03 (*) Ciclo de un nodo nado**
 
 Escribir un ciclo de predicado (G, A, P) para encontrar un camino cerrado (ciclo) P comenzando en un nodo dado A en el gráfico G. El predicado debe devolver todos los ciclos mediante retroceso.
 
