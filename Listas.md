@@ -68,7 +68,7 @@ Un palíndromo puede ser leído al derecho o al revés; e.g. [x,a,m,a,x].
 
 
 
-**1.07 (**) Aplanando una estructura de una lista anidad.**
+**1.07 ( * * ) Aplanando una estructura de una lista anidad.**
 Transforme una lista, posiblemente manteniendo las listas como elementos en una lista 'plana' reemplazando cada lista con sus elementos (recursivamente).
 
 > **Ejemplo:**
@@ -83,7 +83,7 @@ Pista: Usar el predicado predefinido is_list/1 and append/3
 
 
 
-**1.08 (**)Eliminar duplicados consecutivos de los elementos de una list.**
+**1.08 ( * * )Eliminar duplicados consecutivos de los elementos de una list.**
 
 Si una lista contiene elementos repetidos, deberían ser reemplazados con una copia sencilla del elemnto. El orden de los elementos de no deben de ser cambiados.
 
@@ -94,7 +94,7 @@ Si una lista contiene elementos repetidos, deberían ser reemplazados con una co
  ?- compress([a,a,a,a,b,c,c,a,a,d,e,e,e,e],X).
  X = [a,b,c,a,d,e]
 
-**1.09 (**)Si una lista contiene elementos repetidos, deberían ser colocados en sublistas separadas.**
+**1.09 ( * * )Si una lista contiene elementos repetidos, deberían ser colocados en sublistas separadas.**
 
 
 
@@ -135,7 +135,7 @@ Modifique el resultado del problema 1.10 de tal manera que si un elemento no tie
 
 
 
-**1.12 (* *)Decodificar una lista codificada de longitud de ejecución.**
+**1.12 ( * * )Decodificar una lista codificada de longitud de ejecución.**
 
 Dada una lista de códigos de longitud de ejecución generada como se especifica en el problema 1.11. Construya su versión sin comprimir.
 
@@ -143,7 +143,7 @@ Dada una lista de códigos de longitud de ejecución generada como se especifica
 
 
 
-**1.13 (* *)Codificación de longitud de ejecución de una lista (solución directa).**
+**1.13 ( * * )Codificación de longitud de ejecución de una lista (solución directa).**
 
 Implementar directamente el método de compresión de datos de codificación de longitud de ejecución. Es decir. No crear explícitamente las sublistas que contienen los duplicados, como en el problema 1.09, pero sólo contarlos. Como en el problema 1.11, simplifique la lista de resultados reemplazando los términos singleton [1, X] por X.
 
@@ -167,7 +167,7 @@ Implementar directamente el método de compresión de datos de codificación de 
 
 
 
-**1.15 (* *) Duplicar los elementos de una lista un número dado de veces.**
+**1.15 ( * * ) Duplicar los elementos de una lista un número dado de veces.**
 
 > **Ejemplo:**
 
@@ -180,7 +180,7 @@ Implementar directamente el método de compresión de datos de codificación de 
 
 
 
-**1.16 (* *)Soltar cada elemento N'th de una lista.**
+**1.16 ( * * )Soltar cada elemento N'th de una lista.**
 
 > **Ejemplo:**
 
@@ -191,7 +191,7 @@ Implementar directamente el método de compresión de datos de codificación de 
 
 
 
-**1.17 (*) Dividir una lista en dos partes; Se da la longitud de la primera parte.**
+**1.17 ( * ) Dividir una lista en dos partes; Se da la longitud de la primera parte.**
 No utilice predicados predefinidos.
 
 > **Ejemplo:**
@@ -204,7 +204,7 @@ No utilice predicados predefinidos.
 
 
 
-**1.18 (* *) Extrae una tira de una lista.**
+**1.18 ( * * ) Extrae una tira de una lista.**
 Dado dos índices, I y K, la tira es la lista que contiene los elementos entre el I'th y K'th elemento de la lista original (ambos límites incluidos). Comienza contando los elementos con 1.
 
 > **Ejemplo:**
@@ -216,7 +216,7 @@ Dado dos índices, I y K, la tira es la lista que contiene los elementos entre e
 
 
 
-**1.19 (* *) Rotar una lista N hacia la izquierda.**
+**1.19 ( * * ) Rotar una lista N hacia la izquierda.**
 
 > **Ejemplo:**
 
@@ -265,7 +265,7 @@ Pista: Utilice los predicados predefinidos length / 2 y append / 3, así como el
 
 
 
-**1.23 (* *) Extrae un número dado de elementos seleccionados aleatoriamente de una lista.**
+**1.23 ( * * ) Extrae un número dado de elementos seleccionados aleatoriamente de una lista.**
 Los elementos seleccionados se incluirán en una lista de resultados.
 
 > **Ejemplo:**
@@ -293,7 +293,7 @@ Pista: Combinar las soluciones de los problemas 1.22 y 1.23.
 
 
 
-**1.25 (*) Genera una permutación aleatoria de los elementos de una lista.**
+**1.25 ( * ) Genera una permutación aleatoria de los elementos de una lista.**
 
 > **Ejemplo:**
 
@@ -306,7 +306,7 @@ Pista: Utilice la solución del problema 1.23.
 
 
 
-**1.26 (*  *) Generar las combinaciones de K objetos distintos elegidos de los N elementos de una lista.**
+**1.26 ( * * ) Generar las combinaciones de K objetos distintos elegidos de los N elementos de una lista.**
 ¿De cuántas maneras puede un comité de 3 ser elegido de un grupo de 12 personas? Todos sabemos que hay C (12,3) = 220 posibilidades (C (N, K) denota el bien conocido binomial coeficientes). Para los matemáticos puros, este resultado puede ser grande. Pero queremos realmente generar todas las posibilidades (a través de backtracking).
 
 > **Ejemplo:**
@@ -318,7 +318,7 @@ Pista: Utilice la solución del problema 1.23.
     ...
 
 
-**1.27 (* *) Agrupar los elementos de un conjunto en subconjuntos disjuntos.**
+**1.27 ( * * ) Agrupar los elementos de un conjunto en subconjuntos disjuntos.**
 
 A) ¿De cuántas maneras puede un grupo de 9 personas trabajar en 3 subgrupos disjuntos de 2, 3 y 4 personas? Escriba un predicado que genere todas las posibilidades a través de retroceso.
 
@@ -342,7 +342,7 @@ Puede encontrar más información sobre este problema combinatorio en un buen li
 
 
 
-**1.28 (* *) Clasificar una lista de listas según la longitud de las sublistas.**
+**1.28 ( * * ) Clasificar una lista de listas según la longitud de las sublistas.**
 
 A) Suponemos que una lista (InList) contiene elementos que son listas ellos mismos. El objetivo es clasificar los elementos de InList de acuerdo a su longitud. P.ej. Listas cortas primero, listas más largas más adelante o viceversa.
 
