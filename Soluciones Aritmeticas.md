@@ -122,7 +122,7 @@ La conjetura de Goldbach dice que cada número positivo mayor
     Next_prime (P, P1): - P1 es P + 2, is_prime (P1),!.
     Next_prime (P, P1): - P2 es P + 2, next_prime (P2, P1).
 
-% 2,06 (*) Una lista de composiciones de Goldbach.
+**% 2.06 (*) Una lista de composiciones de Goldbach.**
 % Dado un rango de enteros por su límite inferior y superior,
 % Imprimir una lista de todos los números pares y su composición Goldbach.
 
@@ -199,7 +199,7 @@ La función llamada totient phi (m) de Euler se define como el número
     K <M, K _ {1} es K + 1,
     T_phi (M, Phi, K1, C).
 
-**% 2.10 ( *  *) Calcule la función totent de Euler phi( m )(2).**
+**% 2.10 ( * * ) Calcule la función totent de Euler phi( m )(2).**
 
 % Véase el problema 2.09 para la definición de la función totient de Euler.
 % Si la lista de los factores primos de un número m es conocida en la
