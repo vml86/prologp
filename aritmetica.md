@@ -14,6 +14,7 @@ Las soluciones las puedes encontrar [aqui](https://github.com/vml86/prologp/blob
     Sí
 
 **2.02 ( * * ) Determine los factores primos de un entero positivo dado.**
+
 Construya una lista plana que contenga los factores primos en orden ascendente.
 
 > **Ejemplo:**
@@ -22,6 +23,7 @@ Construya una lista plana que contenga los factores primos en orden ascendente.
     L = [3,3,5,7]
 
 **2.03 ( * * ) Determine los factores primos de un entero positivo dado (2).**
+
 Construya una lista que contenga los factores primos y su multiplicidad.
 
 > **Ejemplo:**
@@ -32,6 +34,7 @@ Construya una lista que contenga los factores primos y su multiplicidad.
 **Pista:** La solución del problema 1.10 puede ser útil.
 
 **2.04 (*) Una lista de números primos.**
+
 Dado un rango de enteros por su límite inferior y superior, construya una lista de todos los números primos en ese rango.
 
 **2.05 ( * * ) Conjetura de Goldbach.**
@@ -43,6 +46,7 @@ La conjetura de Goldbach dice que cada número positivo igual mayor que 2 es la 
     L = [5,23]
 
 **2.06 ( * * ) Una lista de las composiciones de Goldbach.**
+
 Dado un rango de números enteros por su límite inferior y superior, imprima una lista de todos los números pares y su composición de Goldbach.
 
 > **Ejemplo:**
@@ -66,6 +70,7 @@ En la mayoría de los casos, si un número par se escribe como la suma de dos n�
     1928 = 61 + 1867
 
 **2.07 ( * * ) Determine el máximo divisor común de dos números enteros positivos.**
+
 Utilice el algoritmo de Euclides.
 
 > **Ejemplo:**
@@ -78,6 +83,7 @@ Utilice el algoritmo de Euclides.
     G = 9
 
 **2.08 (*) Determine si dos números enteros positivos son coprime.**
+
 Dos números son coprime si su mayor divisor común es igual a 1.
 
 > **Ejemplo:**
