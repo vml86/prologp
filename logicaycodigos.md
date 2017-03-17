@@ -8,7 +8,7 @@ Las soluciones las puedes encontrar aquí
 
 
 
-**3.01 (* *) Tablas de verdades para expresiones lógicas.**
+**3.01 ( * * ) Tablas de verdades para expresiones lógicas.**
 
 Definir predicados y / 2, o / 2, nand / 2, nor / 2, xor / 2, impl / 2 y equ / 2 (para equivalencia lógica) que tienen éxito o fallan según el resultado de sus operaciones respectivas; p.ej. Y (A, B) tendrán éxito, si y sólo si ambos A y B tienen éxito. Tenga en cuenta que A y B pueden ser objetivos de Prolog (no sólo las constantes verdaderas y fallas).
 Una expresión lógica en dos variables se puede escribir en la notación de prefijo, como en el siguiente ejemplo: y (o (A, B), nand (A, B)).
@@ -40,7 +40,7 @@ Continúe el problema 3.01 definiendo y / 2, o / 2, etc como operadores. Esto pe
 | fail | fail | fail |
 
 
-**3.03 (* *) Tablas de verdades para expresiones lógicas (3).**
+**3.03 ( * * ) Tablas de verdades para expresiones lógicas (3).**
 
 Generalizar problema 3.02 de tal manera que la expresión lógica puede contener cualquier número de variables lógicas. Definir tabla / 2 de una manera que tabla (List, Expr) imprime la tabla de verdad para la expresión Expr, que contiene las variables lógicas enumeradas en List.
 
@@ -62,7 +62,7 @@ fail | fail | fail |true
 
 
 
-**3.04 (* *) Código gris.**
+**3.04 ( * * ) Código gris.**
 
 Un código Gray de n bits es una secuencia de cadenas de n bits construidas de acuerdo con ciertas reglas. Por ejemplo,
 
@@ -75,7 +75,7 @@ Investigue las reglas de construcción y escriba un predicado con la siguiente e
 % Gris (N, C): - C es el código N-bit Gray
 ¿Se puede aplicar el método de "caché de resultados" para hacer que el predicado sea más eficiente, cuando se va a usar de forma repetida?
 
-**3.05 (* * *) código de Huffman.**
+**3.05 ( * * * ) código de Huffman.**
 
 En primer lugar, estudiar un buen libro sobre matemáticas discretas o algoritmos para una descripción detallada de los códigos Huffman, o consultar Wikipedia
 
