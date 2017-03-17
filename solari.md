@@ -73,7 +73,7 @@ Un palíndromo puede ser leído al derecho o al revés; e.g. [x,a,m,a,x].
 % is_palindrome(L) :- L is a palindrome list
 %    (list) (?)is_palindrome(L) :- reverse(L,L).
 
-**% 1.07 (* *)Aplanando una estructura de una lista anidada.**
+**% 1.07 ( * * )Aplanando una estructura de una lista anidada.**
 
 % my_flatten(L1,L2) :- the list L2 is obtained from the list L1 by
 %    flattening; i.e. if an element of L1 is a list then it is replaced
@@ -87,7 +87,7 @@ Un palíndromo puede ser leído al derecho o al revés; e.g. [x,a,m,a,x].
     my_flatten([X|Xs],Zs) :- my_flatten(X,Y), my_flatten(Xs,Ys), append(Y,Ys,Zs).
 
 
-**%1.08(* *)Eliminar duplicados consecutivos de los elementos de una list.**
+**%1.08( * * )Eliminar duplicados consecutivos de los elementos de una list.**
 
 Si una lista contiene elementos repetidos, deberían ser reemplazados con una copia sencilla del elemnto. El orden de los elementos de no deben de ser cambiados.
 
@@ -101,7 +101,7 @@ Si una lista contiene elementos repetidos, deberían ser reemplazados con una co
     compress([X,X|Xs],Zs) :- compress([X|Xs],Zs).
     compress([X,Y|Ys],[X|Zs]) :- X \= Y, compress([Y|Ys],Zs).
 
-**1.09 (* *) Empaquetar los duplicados consecutivos de los elementos de una lista dentro de las sublistas.**
+**1.09 ( * * ) Empaquetar los duplicados consecutivos de los elementos de una lista dentro de las sublistas.**
 
 
 % paquete(L1,L2) :- la lista L2 es obtenida de la lista L1, empaquetada
@@ -148,7 +148,7 @@ Utilice el resultado del problema 1.09 para implementar el denominado método de
     Strip ([[1, X] | Ys], [X | Zs]): - tira (Ys, Zs).
     [N, X] | Ys], [[N, X] | Zs]): - N> 1, tira (Ys, Zs).
 
-**% 1.12 (* *) Decodificar una lista codificada de longitud de ejecución.**
+**% 1.12 ( * * ) Decodificar una lista codificada de longitud de ejecución.**
 
 % decodificar(L1,L2) :- L2  es la versión descomprimida de una lista codificada
 %    de longitud de ejecución L1.
@@ -159,7 +159,7 @@ Utilice el resultado del problema 1.09 para implementar el denominado método de
     decode([[1,X]|Ys],[X|Zs]) :- decode(Ys,Zs).
     decode([[N,X]|Ys],[X|Zs]) :- N > 1, N1 is N - 1, decode([[N1,X]|Ys],Zs).
 
-**% 1.13 (* *) Codificación de longitud de ejecución de una lista (solución directa)** 
+**% 1.13 ( * * ) Codificación de longitud de ejecución de una lista (solución directa)** 
 
 % Encode_direct (L1, L2): - la lista L2 se obtiene de la lista L1 por
 % decodificación de longitud de ejecución. Los duplicados consecutivos de elementos están codificados % Como términos [N, E], donde N es el número de duplicados del elemento E.
@@ -190,7 +190,7 @@ En el caso de N = 1, T es X, en lugar del término [1, X].
     dupli([],[]).
     dupli([X|Xs],[X,X|Ys]) :- dupli(Xs,Ys).
 
-**% 1.15 (* *)Duplicar los elementos de una lista un número dado de veces**
+**% 1.15 ( * * )Duplicar los elementos de una lista un número dado de veces**
 
 % Dupli (L1, N, L2): - L2 es obtienido de L1 duplicando todos los elementos
 % N veces.
@@ -207,7 +207,7 @@ En el caso de N = 1, T es X, en lugar del término [1, X].
     dupli([X|Xs],N,[X|Ys],K) :- K > 0, K1 is K - 1, dupli([X|Xs],N,Ys,K1).
 
 
-**% 1.16 (* *)Soltar cada elemento N'th de una lista**
+**% 1.16 ( * * )Soltar cada elemento N'th de una lista**
 % soltar (L1, N, L2): - L2 es obtenida de L1 soltando cada elemento N'th.
 % (Lista, entero, lista) (?, +,?)
 soltar (L1, N, L2): - gota (L1, N, L2, N).
@@ -231,7 +231,7 @@ soltar (L1, N, L2): - gota (L1, N, L2, N).
     split(L,0,[],L).
     split([X|Xs],N,[X|Ys],Zs) :- N > 0, N1 is N - 1, split(Xs,N1,Ys,Zs).
 
-**% 1.18 (* *) Extrae una porción de una lista**
+**% 1.18 ( * * ) Extrae una porción de una lista**
 
 % De rebanada (L1, I, K, L2): - L2 es la lista de los elementos de L1 entre
 % ìndice I e índice K (ambos incluidos).
@@ -243,7 +243,7 @@ soltar (L1, N, L2): - gota (L1, N, L2, N).
     slice([_|Xs],I,K,Ys) :- I > 1, 
     I1 is I - 1, K1 is K - 1, slice(Xs,I1,K1,Ys).
 
-**% 1.19 (* *) Rotar una lista N lugares a la izquierda**
+**% 1.19 ( * * ) Rotar una lista N lugares a la izquierda**
 
 % De giro (L1, N, L2): - la lista L2 se obtiene de la lista L1 
 % rotando los elementos de L1 N lugares a la izquierda.
@@ -285,7 +285,7 @@ soltar (L1, N, L2): - gota (L1, N, L2, N).
 % (Entero, entero, lista) (+, +,?)
 
 
-**% 1.23 (* *) Extrae un número dado de elementos seleccionados al azar**
+**% 1.23 ( * * ) Extrae un número dado de elementos seleccionados al azar**
 
 % De una lista.
 
@@ -319,7 +319,7 @@ soltar (L1, N, L2): - gota (L1, N, L2, N).
 
     rnd_permu(L1,L2) :- length(L1,N),rnd_select(L1,N,L2).
 
-**% 1.26 (* *)Generar las combinaciones de k objetos distintos**
+**% 1.26 ( * * )Generar las combinaciones de k objetos distintos**
 
 % Elegido de los n elementos de una lista.
 % combinación (K, L, C): - C es una lista de K elementos distintos
@@ -331,7 +331,7 @@ soltar (L1, N, L2): - gota (L1, N, L2, N).
     el(X,[_|L],R) :- 
     el(X,L,R).
 
-**% 1.27 (* *) Agrupar los elementos de un conjunto en subconjuntos disjuntos.**
+**% 1.27 ( * * ) Agrupar los elementos de un conjunto en subconjuntos disjuntos.**
 
 % Problema a)(G, G1, G2, G3): - distribuir los 9 elementos de G en G1, G2 y G3,
 % tal que G1, G2 y G3 contienen respectivamente 2,3 y 4 elementos
@@ -367,7 +367,7 @@ soltar (L1, N, L2): - gota (L1, N, L2, N).
     subtract(G,G1,R),
     group(R,Ns,Gs).
 
-**% 1.28 (* *) Clasificación de una lista de listas según la longitud**
+**% 1.28 ( * * ) Clasificación de una lista de listas según la longitud**
 
 % A) tipo de longitud
 % Lsort (InList, OutList): - se supone que los elementos de InList
