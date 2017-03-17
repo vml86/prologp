@@ -114,6 +114,9 @@ Véase el problema 2.09 para la definición de la función totient de Euler. Si 
 **2.11 (*) Comparar los dos métodos de cálculo de la función totémica de Euler.**
 Utilice las soluciones de los problemas 2.09 y 2.10 para comparar los algoritmos. Tomemos el número de inferencias lógicas como una medida de eficiencia. Trate de calcular phi (10090) como un ejemplo.
 
+ [Soluciones-2](https://github.com/vml86/prologp/blob/master/Soluciones%20Aritmeticas.md)
+
+
 
 ----------
 
