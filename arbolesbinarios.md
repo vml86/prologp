@@ -30,7 +30,7 @@ Escribir un predicado istree / 1 que tiene éxito si y sólo si su argumento es 
      - ? - istree (t (a, t (b, nil, nil))).
               No
 
-**4.02 (* *) Construir árboles binarios completamente equilibrados**
+**4.02 ( * * ) Construir árboles binarios completamente equilibrados**
 
 En un árbol binario completamente equilibrado, la siguiente propiedad es válida para cada nodo: El número de nodos en su subárbol izquierdo y el número de nodos en su subárbol derecho son casi iguales, lo que significa que su diferencia no es mayor que uno.
 
@@ -44,11 +44,11 @@ Escribe un predicado cbal_tree / 2 para construir árboles binarios completament
 
 Etc.... No
 
-**4.03 (* *) Árboles binarios simétricos**
+**4.03 ( * * ) Árboles binarios simétricos**
 
 Permitanos llamar a un árbol binario simétrico si puedes dibujar una línea vertical a través del nodo raíz y luego el subárbol derecho es la imagen especular del subárbol izquierdo. Escriba un predicado simétrico / 1 para comprobar si un árbol binario dado es simétrico. Sugerencia: Escriba un predicado espejo / 2 primero para comprobar si un árbol es la imagen especular de otro. Sólo estamos interesados en la estructura, no en el contenido de los nodos.
 
-**4.04 (* *) Árboles binarios de búsqueda (diccionarios)**
+**4.04 ( * * ) Árboles binarios de búsqueda (diccionarios)**
 
 Utilice el predicado add / 3, desarrollado en el capítulo 4 del curso, para escribir un predicado para construir un árbol de búsqueda binario a partir de una lista de números enteros.
 
@@ -65,7 +65,7 @@ Utilice el predicado add / 3, desarrollado en el capítulo 4 del curso, para esc
     ? - test_symmetric ([3,2,5,7,4]).
     No
 
-**4.05 (* *) Generar y probar el paradigma**
+**4.05 ( * * ) Generar y probar el paradigma**
 
 Aplicar el paradigma de generar y probar para construir todos los árboles binarios simétricos, completamente equilibrados con un número dado de nodos. 
 
@@ -76,7 +76,7 @@ Aplicar el paradigma de generar y probar para construir todos los árboles binar
 
 ¿Cuántos árboles existen con 57 nodos? Investigue cuántas soluciones hay para un número determinado de nodos? ¿Qué pasa si el número es par? Escribe un predicado apropiado.
 
-**4.06 (* *) Construir árboles binarios de altura equilibrada**
+**4.06 ( * * ) Construir árboles binarios de altura equilibrada**
 
 En un árbol binario de altura equilibrada, la siguiente propiedad es válida para cada nodo: La altura de su subárbol izquierdo y la altura de su subárbol derecho son casi iguales, lo que significa que su diferencia no es mayor que uno.
 
@@ -90,7 +90,8 @@ Escribe un predicado hbal_tree / 2 para construir árboles binarios con altura e
 
 Etc...No
 
-**4.07 (* *) Construir árboles binarios con equilibrio de altura con un número dado de nodos**
+**4.07 ( * * ) Construir árboles binarios con equilibrio de altura con un número dado de nodos**
+
 Considere un árbol binario con altura equilibrada de altura H. ¿Cuál es el número máximo de nodos que puede contener?
 Claramente, MaxN = 2 ** H - 1. Sin embargo, ¿cuál es el número mínimo MinN? Esta pregunta es más difícil. Trate de encontrar una instrucción recursiva y convertirlo en un predicado minNodes / 2 definido de la siguiente manera:
 
@@ -106,11 +107,13 @@ Ahora, podemos atacar el problema principal: construir todos los árboles binari
 Investigue cuántos árboles con altura balanceada existen para N = 15.
 
 **4.08 (*) Cuente las hojas de un árbol binario**
+
 Una hoja es un nodo sin sucesores. Escribe un predicado count_leaves / 2 para contarlos.
 
 % Count_leaves (T, N): - el árbol binario T tiene N hojas
 
 **4.09 (*) Colecciona las hojas de un árbol binario en una lista**
+
 Una hoja es un nodo sin sucesores. Escribe un predicado leaves / 2 para recogerlos en una lista.
 % Hojas (T, S): - S es la lista de todas las hojas del árbol binario T
 
@@ -128,7 +131,7 @@ Un nodo de un árbol binario está en el nivel N si la ruta de la raíz al nodo 
 
 Usando atlevel / 3 es fácil construir un nivel de predicado order / 2 que crea la secuencia de orden de nivel de los nodos. Sin embargo, hay maneras más eficientes de hacer eso.
 
-**4.12 (**) Construir un árbol binario completo**
+**4.12 ( * * ) Construir un árbol binario completo**
 
 Un árbol binario *completo* con altura H se define como se presenta: Los niveles 1,2,3, ..., H-1 contienen el número máximo de nodos (es decir, 2 ** (i-1) en el nivel i, Comenzamos a contar los niveles de 1 en la raíz). En el nivel H, que puede contener menos que el número máximo posible de nodos, todos los nodos están "ajustados a la izquierda". Esto significa que en un árbol de nivel, todos los nodos internos vienen primero, las hojas vienen en segundo lugar, y los sucesores vacíos (los nil que no son realmente nodos!) Vienen en último lugar.
 
@@ -139,7 +142,7 @@ Podemos asignar un número de dirección a cada nodo en un árbol binario comple
     % Complete_binary_tree (N, T): - T es un árbol binario completo con N nodos. (+)
     Pruebe su predicado de una manera apropiada.
 
-**4.13 (* *) Diseño de un árbol binario (1)**
+**4.13 ( * * ) Diseño de un árbol binario (1)**
 
 Dado un árbol binario como el término Prolog usual t (X, L, R) (o nil). Como una preparación para dibujar el árbol, se requiere un algoritmo de disposición para determinar la posición de cada nodo en una cuadrícula rectangular. Se pueden concebir varios métodos de disposición, uno de ellos se muestra en la siguiente ilustración.
 
@@ -161,7 +164,7 @@ Escribir un predicado layout_binary_tree / 2 con la siguiente especificación:
 
 Pruebe su predicado de una manera apropiada.
 
-**4.14 (**) Diseño de un árbol binario (2)**
+**4.14 ( * * ) Diseño de un árbol binario (2)**
 
 ![enter image description here](https://lh3.googleusercontent.com/-O2bXDeeXyAM/WMdAtnNkpVI/AAAAAAAAABo/SmA1UkINKNYOewPAEA9p5u6yNmFEhkFhQCLcB/s0/arbol3.gif "arbol3.gif")
 
@@ -169,7 +172,7 @@ Un método de diseño alternativo se representa en la ilustración anterior. Ave
 
 Utilice las mismas convenciones que en el problema 4.13 y pruebe su predicado de una manera apropiada.
 
-**4.15 (* * *) Diseño de un árbol binario (3**)
+**4.15 ( * * * ) Diseño de un árbol binario (3**)
 
 ![enter image description here](https://lh3.googleusercontent.com/-ybQmyN0LCT4/WMdBv8Aan4I/AAAAAAAAAB8/iBDKAr7iZOA7KnyHlnPlleld0ky1cY6fQCLcB/s0/arbol4.gif "arbol4.gif")
 
@@ -178,6 +181,8 @@ Sin embargo, otra estrategia de diseño se muestra en la ilustración anterior. 
 Utilice las mismas convenciones que en el problema 4.13 y 4.14 y pruebe su predicado de una manera apropiada. Nota: Este es un problema difícil. ¡No te rindas demasiado pronto!
 
 ¿Qué plano le gusta más?
+
+**4.16 ( * * ) Una representación de cadena de árboles binarios**
 
 ![enter image description here](https://lh3.googleusercontent.com/-aHeYBuVvQQU/WMdCIB85jpI/AAAAAAAAACE/AJoq6crURSIPxU89gOngbO_SaqibL55PwCLcB/s0/arbol5.gif "arbol5.gif")
 
@@ -191,7 +196,7 @@ A (b (d, e), c (, f (g,)))
 
 Para simplificar, supongamos que la información en los nodos es una sola letra y no hay espacios en la cadena.
 
-**4.17 (**) Secuencias preordenadas e inordenadas de árboles binarios**
+**4.17 ( * * ) Secuencias preordenadas e inordenadas de árboles binarios**
 
 Consideramos árboles binarios con nodos que son identificados por letras minúsculas simples, como en el ejemplo del problema 4.16.
 
@@ -205,7 +210,7 @@ Consideramos árboles binarios con nodos que son identificados por letras minús
 
 Qué sucede si el mismo carácter aparece en más de un nodo. Pruebe por ejemplo pre_in_tree (aba, baa, T).
 
-**4.18 (* *) Representación en puntos de árboles binarios**
+**4.18 ( * * ) Representación en puntos de árboles binarios**
 
 Consideramos de nuevo árboles binarios con nodos que se identifican mediante letras minúsculas simples, como en el ejemplo del problema 4.16. Dicho árbol puede ser representado por la secuencia preordenada de sus nodos en la que se insertan puntos (.) Donde se encuentra un subárbol vacío (nil) durante el recorrido del árbol. Por ejemplo, el árbol mostrado en el problema 4.16 se representa como 'abd..e..c.fg ...'. En primer lugar, trate de establecer una sintaxis (BNF o diagramas de sintaxis) y luego escribir un predicado tree_dotstring / 2 que realiza la conversión en ambas direcciones. Use las listas de diferencias.
 
