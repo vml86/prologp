@@ -1,7 +1,7 @@
 **2. Aritmética**
 -------------
 
-Las soluciones las puedes encontrar [aqui](https://github.com/vml86/prologp/blob/master/solari.md)
+Las soluciones las puedes encontrar [aqui](https://github.com/vml86/prologp/blob/master/Soluciones%20Aritmeticas.md)
 
 ----------
 
