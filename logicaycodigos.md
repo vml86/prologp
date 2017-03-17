@@ -1,7 +1,7 @@
 
 **3.Logica y Codigos**
 -------------
-Las soluciones las puedes encontrar aquí
+Las soluciones las puedes encontrar [aquí](https://github.com/vml86/prologp/blob/master/Solucioneslogicycodigo.md)
 
 ----------
 
