@@ -1,6 +1,6 @@
 
 
-**Soluciones Aritméticas**
+**Soluciones de Listas**
 ----------
 
 
