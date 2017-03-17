@@ -19,7 +19,7 @@ Usted puede encontrar **soluciones** de los problemas al final de cada sección.
 
 Si encuentra errores o mejores soluciones, envíe el correo a: werner.hett (at) gmail.com
 
-Primera sección: [Prolog Lists](https://sites.google.com/site/prologsite/prolog-problems/1)
+Primera sección: [Listas Prolog](https://github.com/vml86/prologp/blob/master/Listas.md)
 
 
 ----------
