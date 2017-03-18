@@ -363,7 +363,7 @@ B) Una vez más, suponemos que una lista (InList) contiene elementos que son lis
 Observe que en el ejemplo anterior, las dos primeras listas en el resultado L tienen longitud 4 y 1, ambas longitudes aparecen sólo una vez. La tercera y cuarta lista tiene longitud 3; Hay dos lista de esta longitud. Y finalmente, las últimas tres listas tienen longitud 2. Esta es la longitud más frecuente.
 
 
- [Soluciones-]()
+ [Soluciones- 1](https://github.com/vml86/prologp/blob/master/solari.md)
 
 ![enter image description here](https://lh3.googleusercontent.com/sM_kpVx3GhRCwAEsjBIhn5KDlEt92picokUNJTtpWre3r3kqDytUk2FrBpk7hE9uOzbQEPk=s0 "SWI.png")
 
