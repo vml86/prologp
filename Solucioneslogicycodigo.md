@@ -232,5 +232,5 @@ Durante el proceso de construcción, necesitamos nodos n (F, S) donde, al
 > CharList), longitud (CharList, N), FCS1 es FCS + F * N, FS1 es FS + F,
 > Estadísticas (Fs, Hs, FCS1, FS1).
 
-
+[Soluciones-3](https://github.com/vml86/prologp/blob/master/Solucioneslogicycodigo.md)
 
