@@ -1,6 +1,6 @@
 
 
-**Soluciones de Arboles Multiruta**
+**Soluciones de Arboles Multipuntos**
 ----------
 
 
@@ -68,39 +68,6 @@ Primero una buena solución usando listas de diferencias
 >forest_d(F1-F3,[T|F]) :- tree_d(F1-F2,T), forest_d(F2-F3,F).
 
 Otra solución, no tan elegante como la anterior.
-**% 5.03 ( * * ) Construcción de árbol multipunto a partir de una cadena de nodos**
-
-% Suponemos que los nodos de un árbol de múltiples vías contienen
-% caracteres. En la secuencia de profundidad-primer orden de sus nodos, un
-% carácter especial ^ se ha insertado siempre que, durante el
-% el arbol transversal, el movimiento es un retroceso al nivel anterior.
-
-% Defina la sintaxis de la cadena y escriba un árbol de predicados (String, Tree)
-% para construir el arbol cuando se da la Cadena. Trabajar con átomos (en su lugar
-% de cadenas). Haga que su predicado funcione en ambas direcciones.
-%
-
-% Sintaxis en BNF:
-
-% < Tree > :: = < letter > < forest > '^'
-
-% < Forest > :: = | < Tree > < forest >
-
-
-Primero una buena solución usando listas de diferencias
-
-> Árbol (TS, T): - átomo (TS),!, Atom_chars (TS, TL), árbol_d (TL - [],
-> T). % (+, \ Gamma)
-
->Árbol (TS, T): - nonvar (T), árbol_d (TL - [], T), atom_chars (TS, TL). % (\ Alpha, +)
-
->Tree_d ([X | F1] -T, t (X, F)): - forest_d (F1 - ['^' | T], F).
-
->Forest_d (F-F, []).
->Forest_d (F1-F3, [T | F]): - tree_d (F1-F2, T), forest_d (F2-F3, F).
-
-
-Otra solución, no tan elegante como la anterior.
 
 >Árbol_2 (TS, T): - átomo (TS),!, Atom_chars (TS, TL), árbol_a (TL, T). % (+, \ Gamma)
 >Tree_2 (TS, T): - nonvar (T), árbol_a (TL, T), atom_chars (TS, TL). % (\ Alpha, +)
@@ -112,7 +79,7 @@ Append ([X], FL, L1), append (L1, ['^'], TL), forest_a (FL, F).
 Forest_a (FL, [T | Ts]): - append (TL, TsL, FL),
 Tree_a (TL, T), forest_a (TsL, Ts).
 
-**% 5,04 (*) Determina la longitud de la ruta interna de un árbol**
+**% 5.04 (*) Determina la longitud de la ruta interna de un árbol**
 
 % Definimos la longitud de la trayectoria interna de un árbol de múltiples vías como la
 % suma total de las longitudes de ruta desde la raíz a todos los nodos del árbol.
