@@ -214,6 +214,8 @@ Qué sucede si el mismo carácter aparece en más de un nodo. Pruebe por ejemplo
 
 Consideramos de nuevo árboles binarios con nodos que se identifican mediante letras minúsculas simples, como en el ejemplo del problema 4.16. Dicho árbol puede ser representado por la secuencia preordenada de sus nodos en la que se insertan puntos (.) Donde se encuentra un subárbol vacío (nil) durante el recorrido del árbol. Por ejemplo, el árbol mostrado en el problema 4.16 se representa como 'abd..e..c.fg ...'. En primer lugar, trate de establecer una sintaxis (BNF o diagramas de sintaxis) y luego escribir un predicado tree_dotstring / 2 que realiza la conversión en ambas direcciones. Use las listas de diferencias.
 
+[Soluciones-3](https://github.com/vml86/prologp/blob/master/SolucionesAB.md)
+
 ----------
 
 
