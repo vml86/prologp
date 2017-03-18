@@ -84,6 +84,8 @@ Suponemos un conjunto de símbolos con sus frecuencias, dado como una lista de t
 % Huffman (Fs, Hs): - Hs es la tabla de códigos de Huffman para la tabla de frecuencias Fs.
 
 
+[Soluciones-3](https://github.com/vml86/prologp/blob/master/Solucioneslogicycodigo.md)
+
 ----------
 
 
