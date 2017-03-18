@@ -1,6 +1,6 @@
 **6.Gráficos**
 -------------
-Las soluciones las puedes encontrar aquí
+Las soluciones las puedes encontrar [aquí](https://github.com/vml86/prologp/blob/master/SolucionesG.md)
 
 ----------
 **Una observación preliminar: El vocabulario en la teoría de los gráficos varía considerablemente. Algunos autores usan la misma palabra con diferentes significados. Algunos autores usan palabras diferentes para significar lo mismo. Espero que nuestras definiciones estén libres de contradicciones.**
@@ -131,7 +131,7 @@ En un gráfico K-regular todos los nodos tienen un grado de K; Es decir, el núm
 
 Véase también la tabla de resultados en p6_11.txt.
 
-
+[Soluciones-6](https://github.com/vml86/prologp/blob/master/SolucionesG.md)
 ----------
 
 
