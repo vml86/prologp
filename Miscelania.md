@@ -1,6 +1,6 @@
 **7.Miscelania**
 -------------
-Las soluciones las puedes encontrar aquí
+Las soluciones las puedes encontrar [aquí](https://github.com/vml86/prologp/blob/master/Soluciones%20Miscelania.md)
 
 ----------
 **7.01 ( * * ) Problemas de ocho reinas**
@@ -76,3 +76,9 @@ Sugerencias:
 1) El problema no es fácil. Necesitará algún tiempo para entenderlo a fondo. Por lo tanto, no te rindas demasiado pronto! Y recuerde que el objetivo es una solución limpia, no sólo un hack rápido y sucio!
 (2) La lectura del archivo de datos es un problema complicado para el que se proporciona una solución en el archivo p7_09-readfile.pl. Utilice el predicado read_lines / 2.
 (3) Por razones de eficiencia, es importante, al menos para rompecabezas mayores, clasificar las palabras y los sitios en un orden particular. Para esta parte del problema, la solución de 1,28 puede ser muy útil.
+
+Soluciones-7
+
+---------
+
+*****
