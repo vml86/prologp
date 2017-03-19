@@ -1,4 +1,6 @@
+
 [Mas Soluciones](https://github.com/vml86/prologp/blob/master/Soluciones%20Miscelania%207.09.md)
+
 **%  7.07 ( * * ) Sudoku**
 
 Esta solución con listas de diferencias no es más elegante
