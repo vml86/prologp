@@ -2,10 +2,6 @@ Soluciones 7.09
 
 ----------
 
-
-----------
-
-
 **9A**
 - LINUX
 - PROLOG
