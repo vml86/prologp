@@ -372,17 +372,17 @@ Por ejemplo, si tenemos que poner un tramo de longitud 3 en una línea
 % las filas y columnas en RowNums y ColNums, respectivamente, el rompecabezas% es resuelto por Solución, que es una representación fila por fila de%  la rejilla llena del rompecabezas Opt = 0 es sin optimización, Opt = 1% Optimiza el orden de las tareas de línea (ver abajo).
 % (List-of-int-lists, list-of-int-lists, list-char-lists) (+, +, -)
 
-      nonogram(RowNums,ColNums,Solution,Opt) :-
-      length(RowNums,NRows),
-      length(ColNums,NCols),
-      make_rectangle(NRows,NCols,Rows,Cols),
-      append(Rows,Cols,Lines),
-      append(RowNums,ColNums,LineNums),
-      maplist(make_runs,LineNums,LineRuns),
-      combine(Lines,LineRuns,LineTasks),
-      optimize(Opt,LineTasks,OptimizedLineTasks),
-      solve(OptimizedLineTasks),
-      Solution = Rows.
+    nonogram(RowNums,ColNums,Solution,Opt) :-
+    length(RowNums,NRows),
+    length(ColNums,NCols),
+    make_rectangle(NRows,NCols,Rows,Cols),
+    append(Rows,Cols,Lines),
+    append(RowNums,ColNums,LineNums),
+    maplist(make_runs,LineNums,LineRuns),
+    combine(Lines,LineRuns,LineTasks),
+    optimize(Opt,LineTasks,OptimizedLineTasks),
+    solve(OptimizedLineTasks),
+    Solution = Rows.
      
 
     combine([],[],[]).
