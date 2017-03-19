@@ -1,5 +1,6 @@
 
 **Soluciones Miscelania 7.01 - 7.06**
+**Mas Soluciones**
 ----------
 
 
