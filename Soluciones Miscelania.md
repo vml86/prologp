@@ -1,6 +1,7 @@
 
 **Soluciones Miscelania 7.01 - 7.06**
-**Mas Soluciones**
+
+[Mas Soluciones 7.07-7.08](https://github.com/vml86/prologp/blob/master/miscelania7.08-2.md)
 ----------
 
 
