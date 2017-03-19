@@ -373,16 +373,16 @@ Por ejemplo, si tenemos que poner un tramo de longitud 3 en una línea
 % (List-of-int-lists, list-of-int-lists, list-char-lists) (+, +, -)
 
       nonogram(RowNums,ColNums,Solution,Opt) :-
-       length(RowNums,NRows),
-       length(ColNums,NCols),
-       make_rectangle(NRows,NCols,Rows,Cols),
-       append(Rows,Cols,Lines),
-       append(RowNums,ColNums,LineNums),
-       maplist(make_runs,LineNums,LineRuns),
-       combine(Lines,LineRuns,LineTasks),
-       optimize(Opt,LineTasks,OptimizedLineTasks),
-       solve(OptimizedLineTasks),
-       Solution = Rows.
+      length(RowNums,NRows),
+      length(ColNums,NCols),
+      make_rectangle(NRows,NCols,Rows,Cols),
+      append(Rows,Cols,Lines),
+      append(RowNums,ColNums,LineNums),
+      maplist(make_runs,LineNums,LineRuns),
+      combine(Lines,LineRuns,LineTasks),
+      optimize(Opt,LineTasks,OptimizedLineTasks),
+      solve(OptimizedLineTasks),
+      Solution = Rows.
      
 
     combine([],[],[]).
