@@ -410,8 +410,8 @@ Por ejemplo, si tenemos que poner un tramo de longitud 3 en una línea
     
     solve([]).
     solve([task(Line,LineRuns)|Tasks]) :- 
-       place_runs(LineRuns,Line),
-       solve(Tasks).
+    place_runs(LineRuns,Line),
+    solve(Tasks).
     
     make_rectangle(NRows,NCols,Rows,Cols) :-
     NRows > 0, NCols > 0,
