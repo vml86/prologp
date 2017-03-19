@@ -1,5 +1,11 @@
+**Soluciones Miscelania 7.07 - 7.08**
 
-[Mas Soluciones](https://github.com/vml86/prologp/blob/master/Soluciones%20Miscelania%207.09.md)
+[Mas Soluciones 7.09](https://github.com/vml86/prologp/blob/master/Soluciones%20Miscelania%207.09.md)
+----------
+
+
+----------
+
 
 **%  7.07 ( * * ) Sudoku**
 
